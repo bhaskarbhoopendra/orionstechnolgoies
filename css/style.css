@@ -1,0 +1,181 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Aleo", serif; }
+
+.navbar-custom {
+  background-image: linear-gradient(#303c6c, #8860d0); }
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 800;
+  letter-spacing: 3px; }
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.5vw; }
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #fff; }
+
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+  background-color: #8860d0; }
+
+.navbar-custom .dropdown-item {
+  color: #ffffff; }
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+  color: #191919;
+  background-color: #5ab9ea; }
+
+.header {
+  background-image: url("../images/background.png");
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-top: 80px;
+  margin-bottom: 0px; }
+
+.left-header .left-header-image {
+  margin-top: 70px;
+  height: 100vh;
+  width: 50vw;
+  overflow-y: hidden; }
+  .left-header .left-header-image .image {
+    animation: movingImage 5s ease-out infinite;
+    max-width: 100%;
+    height: auto; }
+
+@keyframes movingImage {
+  50% {
+    transform: translate(0, 20px); } }
+
+@keyframes movingtext {
+  0% {
+    opacity: 0;
+    transform: translate(-100px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.right-header .content {
+  margin-top: 85px; }
+  .right-header .content .heading {
+    font-size: 5.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.5);
+    color: #fff; }
+    .right-header .content .heading .solutions {
+      color: #d1d8ec;
+      font-weight: 900;
+      animation: movingtext 4s ease-out; }
+  .right-header .content .button {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between; }
+
+.buttons {
+  font-size: 1vw;
+  padding: 17px 25px;
+  margin: 0px;
+  border-radius: 50px;
+  border: none;
+  background-image: linear-gradient(#5680e9, #374785);
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase; }
+
+.border {
+  border: none;
+  outline: none; }
+  .border .border-heading {
+    outline: none;
+    font-size: 3.5vw;
+    font-weight: 500;
+    text-align: center;
+    color: #303c6c;
+    padding: 50px 0px;
+    text-transform: uppercase; }
+
+.box-section {
+  background-color: #d1d8ec; }
+
+.box-container {
+  margin: 0px 50px; }
+
+.box {
+  background-color: white;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .box .image {
+    margin-top: 10px; }
+    .box .image .img {
+      height: 200px;
+      width: auto;
+      max-width: 100%;
+      margin-bottom: 10px; }
+    .box .image .box-heading {
+      text-align: center;
+      text-transform: uppercase;
+      color: #ef5350;
+      font-size: 25px;
+      font-weight: 600; }
+  .box .box-content .para {
+    text-align: center;
+    padding: 5%;
+    color: grey; }
+  .box .box-content .btn {
+    width: 100%;
+    background-color: #374785;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 4%; }
+
+.techno {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #8860d0; }
+  .techno .container-tech {
+    background-color: #d1d8ec;
+    margin: 50px 50px;
+    border-radius: 50px; }
+    .techno .container-tech .tech-heading {
+      text-align: center;
+      color: #ef5350;
+      margin-top: 55px;
+      margin-bottom: 55px;
+      font-size: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    .techno .container-tech .ul-tech {
+      list-style-type: none;
+      margin-left: 40px; }
+      .techno .container-tech .ul-tech .li-tech {
+        font-size: 25px;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #303c6c; }
+    .techno .container-tech .tech-image .tech-img {
+      height: 500px; }

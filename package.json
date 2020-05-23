@@ -1,0 +1,14 @@
+{
+  "name": "orionstehchnology",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": " node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "bhoopendrabhaskar",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

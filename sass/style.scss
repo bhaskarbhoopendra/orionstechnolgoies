@@ -1,0 +1,243 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Aleo", serif;
+}
+$capri: #5ab9ea;
+$purple: #8860d0;
+$cryola: #d1d8ec;
+$sky-blue: #84ceeb;
+$blue: #5680e9;
+$dark-blue: #303c6c;
+$l-dark-blue: #374785;
+$white: #fff;
+$red: #ef5350;
+
+.navbar-custom {
+  background-image: linear-gradient($dark-blue, $purple);
+  // background-color: $dark-blue;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: $white;
+  font-size: 2vw;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: $white;
+  font-size: 1.5vw;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: $white;
+}
+
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+  background-color: $purple;
+}
+
+.navbar-custom .dropdown-item {
+  color: #ffffff;
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+  color: #191919;
+  background-color: $capri;
+}
+
+.header {
+  background-image: url("../images/background.png");
+  // background-color: $purple;
+
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  // overflow-y: hidden;
+}
+
+.left-header {
+  // height: 100%;
+  .left-header-image {
+    margin-top: 70px;
+    height: 100vh;
+    width: 50vw;
+    overflow-y: hidden;
+
+    .image {
+      animation: movingImage 5s ease-out infinite;
+      // position: relative;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@keyframes movingImage {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+
+@keyframes movingtext {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.right-header {
+  .content {
+    margin-top: 85px;
+    .heading {
+      font-size: 5.5vw;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.5em;
+      letter-spacing: 2px;
+      text-shadow: 0px 4px rgba(0, 0, 0, 0.5);
+      color: $white;
+      .solutions {
+        color: $cryola;
+        font-weight: 900;
+        animation: movingtext 4s ease-out;
+      }
+    }
+    .button {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.buttons {
+  font-size: 1vw;
+  padding: 17px 25px;
+  margin: 0px;
+  border-radius: 50px;
+  border: none;
+  background-image: linear-gradient($blue, $l-dark-blue);
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.border {
+  border: none;
+  outline: none;
+  .border-heading {
+    outline: none;
+    font-size: 3.5vw;
+    font-weight: 500;
+    text-align: center;
+    color: $dark-blue;
+    padding: 50px 0px;
+    text-transform: uppercase;
+  }
+}
+
+.box-section {
+  background-color: $cryola;
+}
+.box-container {
+  margin: 0px 50px;
+}
+.box {
+  background-color: white;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .image {
+    margin-top: 10px;
+    .img {
+      height: 200px;
+      width: auto;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    .box-heading {
+      text-align: center;
+      text-transform: uppercase;
+      color: $red;
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+  .box-content {
+    .para {
+      text-align: center;
+      padding: 5%;
+      color: grey;
+    }
+    .btn {
+      width: 100%;
+      background-color: $l-dark-blue;
+      outline: none;
+      border: none;
+      font-size: 20px;
+
+      padding: 4%;
+    }
+  }
+}
+
+.techno {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: $purple;
+
+  .container-tech {
+    background-color: $cryola;
+    margin: 50px 50px;
+    border-radius: 50px;
+
+    .tech-heading {
+      text-align: center;
+      color: $red;
+      margin-top: 55px;
+      margin-bottom: 55px;
+      font-size: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .ul-tech {
+      list-style-type: none;
+      margin-left: 40px;
+      .li-tech {
+        font-size: 25px;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: $dark-blue;
+      }
+    }
+
+    .tech-image {
+      .tech-img {
+        height: 500px;
+      }
+    }
+  }
+}
